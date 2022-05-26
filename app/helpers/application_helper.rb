@@ -7,6 +7,6 @@ module ApplicationHelper
   end
 
   def form_errors(object)
-    render 'shared/form_errors', object: object
+    render 'shared/form_errors', object:
   end
 end
