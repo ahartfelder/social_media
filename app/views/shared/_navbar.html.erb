@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">Social Media</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'Home', root_path, class:"nav-link#{active?(root_path)}" %>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle<%= active?(articles_path) %>" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Articles
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><%= link_to 'View Articles', articles_path, class:'dropdown-item' %></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><%= link_to 'Create article', new_article_path, class:'dropdown-item' %></li>
+          </ul>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <% if true %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Username
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Delete Account</a></li>
+            </ul>
+          </li>
+          <li class="nav-item my-1 m-lg-0">
+            <%= link_to 'Logout', '#', class:'btn btn-danger' %>
+          </li>
+        <% else %>
+          <li class="nav-item mb-2 mb-lg-0 me-lg-1">
+            <%= link_to 'Login', '#', class:'btn btn-primary' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Sign up', '#', class:'btn btn-success' %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
