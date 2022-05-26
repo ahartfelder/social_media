@@ -1,12 +1,25 @@
-<div id="<%= dom_id article %>">
-  <p>
-    <strong>Title:</strong>
-    <%= article.title %>
-  </p>
+<div id="<%= dom_id article %>" class="card text-center mb-3">
+  <div class="card-header">
+    Username
+  </div>
 
-  <p>
-    <strong>Body:</strong>
-    <%= article.body %>
-  </p>
+  <div class="card-body">
+    <h5 class="card-title">
+      <%= article.title %>
+    </h5>
+
+    <p class="card-text">
+      <%= article.body %>
+    </p>
+
+    <div>
+      <%= link_to 'Show', article, class:'btn btn-primary btn-sm' if request.path != article_path(article) %>
+      <%= link_to 'Edit', [:edit, article], class:'btn btn-secondary btn-sm' %>
+      <%= link_to 'Delete', article, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class:'btn btn-danger btn-sm' %>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    <small>Created <%= time_ago_in_words(article.created_at) %> ago, updated <%= time_ago_in_words(article.updated_at) %> ago.</small>
+  </div>
 
 </div>
