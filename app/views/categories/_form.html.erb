@@ -1,0 +1,12 @@
+<%= form_with(model: category, html: { class: 'text-start' }) do |form| %>
+  <%= form_errors(category) %>
+
+  <div class="mb-2">
+    <%= form.label :name, class: 'form-label' %>
+    <%= form.text_field :name, class: 'form-control' %>
+  </div>
+
+  <div class="mb-2">
+    <%= form.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>
