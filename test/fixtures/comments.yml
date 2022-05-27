@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+first:
+  message: First comment
+  article: one
+
+second:
+  message: Second comment
+  article: one
+
+third:
+  message: Third comment
+  article: one
