@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Controls for comments
 class CommentsController < ApplicationController
   before_action :set_article
 
