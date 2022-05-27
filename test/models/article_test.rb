@@ -4,7 +4,7 @@ require 'test_helper'
 
 class ArticleTest < ActiveSupport::TestCase
   setup do
-    @article = articles(:one)
+    @article = articles(:art1)
   end
 
   test 'title should be present' do

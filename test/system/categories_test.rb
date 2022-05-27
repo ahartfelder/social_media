@@ -4,7 +4,7 @@ require 'application_system_test_case'
 
 class CategoriesTest < ApplicationSystemTestCase
   setup do
-    @category = categories(:travel)
+    @category = categories(:cat1)
   end
 
   test 'visiting the index' do

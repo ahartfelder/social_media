@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-travel:
+cat1:
   name: Travel
 
-sports:
+cat2:
   name: Sports
 
-leisure:
+cat3:
   name: Leisure
 
-other:
+cat4:
   name: Other

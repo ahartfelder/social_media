@@ -4,7 +4,7 @@ require 'test_helper'
 
 class ArticlesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @article = articles(:one)
+    @article = articles(:art1)
   end
 
   test 'should get index' do

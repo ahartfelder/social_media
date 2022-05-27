@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+art1:
   title: First article
   body: This is first article
 
-two:
+art2:
   title: Second article
   body: This is second article
 
-three:
+art3:
   title: Third article
   body: This is third article

@@ -1,6 +1,7 @@
-<div id="<%= dom_id article %>" class="card shadow mb-4">
+<div id="<%= dom_id article %>" class="card col-md-8 shadow mb-4 mx-auto">
   <div class="card-header">
-    Username
+    <div>Username</div>
+    <%= render 'categories/badge', categories: article.categories %>
   </div>
 
   <div class="card-body">

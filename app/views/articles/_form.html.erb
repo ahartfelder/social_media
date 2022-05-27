@@ -12,6 +12,10 @@
   </div>
 
   <div class="mb-2">
+    <%= form.collection_select :category_ids, Category.order(:name), :id, :name, { prompt: true }, { size: 3, class: 'form-select', multiple: true } %>
+  </div>
+
+  <div class="mb-2">
     <%= form.submit class:'btn btn-primary' %>
   </div>
 <% end %>

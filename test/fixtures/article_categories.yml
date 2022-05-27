@@ -1,13 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-com1:
-  message: First comment
+one:
   article: art1
+  category: cat1
 
-com2:
-  message: Second comment
+two:
+  article: art1
+  category: cat2
+
+three:
   article: art2
+  category: cat3
 
-com3:
-  message: Third comment
-  article: art1
+four:
+  article: art3
+  category: cat2
