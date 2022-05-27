@@ -1,5 +1,11 @@
 <%= render @article %>
 
+<h5>Comments:</h5>
+
+<%= render @article.comments %>
+
+<%= render 'comments/form' %>
+
 <div>
   <%= link_to 'Back to articles', articles_path, class:'btn btn-secondary btn-sm' %>
 </div>

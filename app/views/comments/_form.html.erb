@@ -1,0 +1,8 @@
+<%= form_with(model: [@article, @article.comments.build], html: { class: 'text-start' }) do |form| %>
+
+  <div class="input-group rounde my-4">
+    <%= form.label :message, class: 'form-label visually-hidden' %>
+    <%= form.text_field :message, placeholder: 'Post your comment here', class: 'form-control rounded' %>
+    <%= form.submit :message, class: 'btn btn-primary' %>
+  </div>
+<% end %>
